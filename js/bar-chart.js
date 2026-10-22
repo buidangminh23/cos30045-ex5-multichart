@@ -36,9 +36,7 @@ const drawBarChart = data => {
     .nice();
 
   const bottomAxis = d3.axisBottom(xScale)
-    .tickSizeOuter(0)
-    .tickSize(0)
-    .tickPadding(10);
+    .tickSizeOuter(0);
 
   const leftAxis = d3.axisLeft(yScale);
 
