@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 5 Multi-chart Page</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- GenAI: page structure drafted with Claude Opus 5.5, then reviewed and edited by me -->
+  <header>
+    <h1>Appliance Energy Consumption: Charts</h1>
+    <nav>
+      <ul>
+        <li><a href="https://buidangminh23.github.io/cos30045-ex4-1-svg-house/">Ex 4.1 SVG House</a></li>
+        <li><a href="https://buidangminh23.github.io/cos30045-ex4-bar-chart/">Ex 4.3-4.7 Bar Chart</a></li>
+        <li><a class="active" href="https://buidangminh23.github.io/cos30045-ex5-multichart/">Ex 5 Multi-chart Page</a></li>
+        <li><a href="https://buidangminh23.github.io/cos30045-ex6-interactivity/">Ex 6 Interactivity</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="chart-section">
+      <h2>Exercise 5.1: Which 55 inch TV screen type uses the most energy?</h2>
+      <p>Average labelled energy consumption (kWh/year) of 55 inch TV models available in Australia, by screen technology. Comparing one screen size removes the effect of size on energy use.</p>
+      <div id="bar-chart" class="responsive-svg-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Bui Dang Minh (105716425). Data: Energy Rating TV registrations (February 2026). GenAI acknowledgement: code drafted with Claude Opus 5.5 and reviewed by me.</p>
+  </footer>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="js/bar-chart.js"></script>
+</body>
+</html>
