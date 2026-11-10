@@ -30,7 +30,7 @@ const drawBarChart = data => {
     .padding(0.1);
 
   const yScale = d3.scaleLinear()
-    .domain([0, d3.max(data, d => d.Energy_Consumption)])
+    .domain([0, d3.max(data, d => d.ABC)])
     .range([innerHeight, 0])
     .nice();
 
@@ -52,7 +52,7 @@ const drawBarChart = data => {
   innerChart
     .append("text")
       .attr("class", "axis-label")
-      .text("Energy Consumption (kWh/year)")
+      .text("ABC (kWh/year)")
       .attr("x", -margin.left)
       .attr("y", -15)
       .attr("text-anchor", "start");
@@ -63,9 +63,9 @@ const drawBarChart = data => {
     .join("rect")
       .attr("class", "bar")
       .attr("width", xScale.bandwidth())
-      .attr("height", d => innerHeight - yScale(d.Energy_Consumption))
+      .attr("height", d => innerHeight - yScale(d.ABC))
       .attr("x", d => xScale(d.Screen_Tech))
-      .attr("y", d => yScale(d.Energy_Consumption))
+      .attr("y", d => yScale(d.ABC))
       .attr("fill", "#FF0000);
 
   innerChart
@@ -73,8 +73,8 @@ const drawBarChart = data => {
     .data(data)
     .join("text")
       .attr("class", "bar-label")
-      .text(d => `${Math.round(d.Energy_Consumption)} kWh`)
+      .text(d => `${Math.round(d.ABC)} kWh`)
       .attr("x", d => xScale(d.Screen_Tech) + xScale.bandwidth() / 2)
-      .attr("y", d => yScale(d.Energy_Consumption) - 8)
+      .attr("y", d => yScale(d.ABC) - 8)
       .attr("text-anchor", "middle");
 };
