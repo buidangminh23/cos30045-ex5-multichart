@@ -1,4 +1,3 @@
-// GenAI: steps follow the Exercise 5.1 brief; drafted with Claude Opus 5.5 and reviewed by me
 d3.csv("data/tv55ScreenTechEnergy.csv", d => {
   return {
     Screen_Tech: d.Screen_Tech,

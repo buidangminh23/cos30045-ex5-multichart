@@ -1,4 +1,3 @@
-// GenAI: steps follow the Exercise 5.2 brief; drafted with Claude Opus 5.5 and reviewed by me
 d3.csv("data/ARE_Spot_Prices.csv", d => {
   return {
     year: +d.Year,

@@ -1,4 +1,3 @@
-// GenAI: steps follow the Exercise 5.3 brief; drafted with Claude Opus 5.5 and reviewed by me
 d3.csv("data/tvScreenSizeCategory.csv", d => {
   return {
     Screensize_Category: d.Screensize_Category,
