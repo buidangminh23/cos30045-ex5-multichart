@@ -66,7 +66,7 @@ const drawBarChart = data => {
       .attr("height", d => innerHeight - yScale(d.Energy_Consumption))
       .attr("x", d => xScale(d.Screen_Tech))
       .attr("y", d => yScale(d.Energy_Consumption))
-      .attr("fill", "#eeaa46");
+      .attr("fill", "#FF0000);
 
   innerChart
     .selectAll(".bar-label")
